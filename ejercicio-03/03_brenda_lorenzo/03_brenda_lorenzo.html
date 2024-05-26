@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejerciocio 3</title>
+</head>
+<body>
+    <script>
+        var sabores = ['chocolate','fresa','vainilla']
+
+        function contarsabor(sabores){
+        console.log('El tamaño es de:', sabores.length)
+        return sabores.length
+        }
+        contarsabor(sabores)
+
+        function mostrarSabores(sabores){
+            console.log(sabores)
+        }
+        mostrarSabores(sabores)
+
+        function agregarSabor(sabores, saborN){
+            sabores.push(saborN);
+            console.log('Sabor Agregado:', saborN)
+            console.log('Sabores Actualizados:', sabores)
+        }
+        agregarSabor(sabores, 'limon')
+
+        function saludar(nombre){
+            return `Hola ${nombre} bienvenido a git`
+        }
+        saludar('Brenda');
+
+        function main(){
+            saludar('Brenda');
+            mostrarSabores(sabores);
+            agregarSabor(sabores, 'limon');
+            contarsabor(sabores);
+
+            mostrarSabores(sabores);
+            agregarSabor(sabores, 'limon');
+            contarsabor(sabores);
+        }
+        main()
+        
+    </script>
+</body>
+</html>
