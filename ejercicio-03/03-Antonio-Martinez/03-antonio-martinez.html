@@ -56,12 +56,13 @@
                 console.log("Sabor "+ Sabor + " Agregado")
             }
 
-            function saludar(nombre){
-                console.log("!Hola"+ nombre +", Bienvenido a Git");
+            function saludar(){
+                var name = prompt("What's your name?");
+                console.log("!Hola"+ name +", Bienvenido a Git");
             }
 
             function main(){
-                saludar("Antonio");
+                saludar();
                 mostrarSabores();
                 agregarSabor("ColaCola");
                 contarSabores();
