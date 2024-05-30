@@ -7,43 +7,36 @@
 </head>
 <body>
     <script>
-        var sabores = ['chocolate','fresa','vainilla']
+        let sabores = ["Vainilla", "Chocolate", "Fresa"];
 
-        function contarsabor(sabores){
-        console.log('El tamaño es de:', sabores.length)
-        return sabores.length
+        function contarSabores() {
+            console.log("Cantidad de sabores: " + sabores.length);
         }
-        contarsabor(sabores)
-
-        function mostrarSabores(sabores){
-            console.log(sabores)
+        function mostrarSabores() {
+            console.log("Sabores: " + sabores.join(", "));
         }
-        mostrarSabores(sabores)
-
-        function agregarSabor(sabores, saborN){
-            sabores.push(saborN);
-            console.log('Sabor Agregado:', saborN)
-            console.log('Sabores Actualizados:', sabores)
+        function agregarSabor(sabor) {
+            sabores.push(sabor);
+            console.log(`Sabor ${sabor} agregado`);
         }
-        agregarSabor(sabores, 'limon')
-
-        function saludar(nombre){
-            return `Hola ${nombre} bienvenido a git`
+        function saludar(nombre) {
+            console.log(`¡Hola ${nombre}, bienvenido a Git!`);
         }
-        saludar('Brenda');
+        function main() {
+            let nombreUsuario = prompt("Introduce tu nombre:");
+            saludar(nombreUsuario);
+            mostrarSabores();
 
-        function main(){
-            saludar('Brenda');
-            mostrarSabores(sabores);
-            agregarSabor(sabores, 'limon');
-            contarsabor(sabores);
-
-            mostrarSabores(sabores);
-            agregarSabor(sabores, 'limon');
-            contarsabor(sabores);
+            let nuevoSabor1 = prompt("Introduce un nuevo sabor para agregar:");
+            agregarSabor(nuevoSabor1);
+            contarSabores();
+            mostrarSabores();
+            
+            let nuevoSabor2 = prompt("Introduce otro nuevo sabor para agregar:");
+            agregarSabor(nuevoSabor2);
+            contarSabores();
         }
-        main()
-        
+        main();
     </script>
 </body>
 </html>
