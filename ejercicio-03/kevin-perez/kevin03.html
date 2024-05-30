@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+var sabores = ['chocolate','vainilla','limon']
+
+function contarsabor(sabores) {
+    console.log('El tamaño es de:', sabores.length)
+}
+
+function mostrarSabores(sabores) {
+     console.log(sabores)
+}
+
+function agregarSabor( saborN) {
+    sabores.push(saborN);
+    console.log('Sabor Agregado:', saborN)
+
+}
+
+function saludar (nombre) {
+    console.log( `Hola ${nombre} bienvenido a Git`)
+}
+
+function main() {
+    var nomb = prompt('Introduce un nombre');
+    saludar(nomb);
+    mostrarSabores();
+    agregarSabor('fresa');
+    contarsabor();
+    mostrarSabores();
+    agregarSabor('fresa');
+    contarsabor();
+}
+
+main()
+
+</script>
+</html>
