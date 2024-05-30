@@ -44,7 +44,7 @@
 
             function contarSabores(){
                 var contador = Sabores.length + 1
-                console.log("Ahy "+ contador + " Sabores");
+                console.log(`Ahy ${contador} Sabores`);
             }
 
             function mostrarSabores(){
@@ -53,16 +53,16 @@
 
             function agregarSabor(Sabor){
                 Sabores.push(Sabor);
-                console.log("Sabor "+ Sabor + " Agregado")
+                console.log(`Sabor ${Sabor} Agregado`)
             }
 
-            function saludar(){
-                var name = prompt("What's your name?");
-                console.log("!Hola"+ name +", Bienvenido a Git");
+            function saludar(name){
+                console.log(`!Hola ${name}, Bienvenido a Git`);
             }
 
             function main(){
-                saludar();
+                var name = prompt("Cual es tu nombre");
+                saludar(name);
                 mostrarSabores();
                 agregarSabor("ColaCola");
                 contarSabores();
