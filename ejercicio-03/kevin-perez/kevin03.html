@@ -17,33 +17,29 @@ function contarsabor(sabores) {
     return sabores.length
 }
 
-
 function mostrarSabores(sabores) {
      console.log(sabores)
 }
 
-
-function agregarSabor(sabores, saborN) {
+function agregarSabor( saborN) {
     sabores.push(saborN);
     console.log('Sabor Agregado:', saborN)
-    console.log('Sabores Actualizados', sabores)
-}
 
+}
 
 function saludar(nombre) {
     return `Hola ${nombre} bienvenido a Git`
 }
 
-
 function main() {
-    saludar('kevin');
-    mostrarSabores(sabores);
-    agregarSabor(sabores,'fresa');
-    contarsabor(sabores);
+    saludar();
+    mostrarSabores();
+    agregarSabor('fresa');
+    contarsabor();
     
-    mostrarSabores(sabores);
-    agregarSabor(sabores,'fresa');
-    contarsabor(sabores);
+    mostrarSabores();
+    agregarSabor('fresa');
+    contarsabor();
 }
 
 main()
