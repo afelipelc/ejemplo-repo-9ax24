@@ -14,7 +14,6 @@ var sabores = ['chocolate','vainilla','limon']
 
 function contarsabor(sabores) {
     console.log('El tamaño es de:', sabores.length)
-    return sabores.length
 }
 
 function mostrarSabores(sabores) {
@@ -27,12 +26,12 @@ function agregarSabor( saborN) {
 
 }
 
-function saludar(nombre) {
-    return `Hola ${nombre} bienvenido a Git`
+function saludar (nombre) {
+    console.log( `Hola ${nombre} bienvenido a Git`)
 }
 
 function main() {
-    saludar();
+    saludar('kevin');
     mostrarSabores();
     agregarSabor('fresa');
     contarsabor();
