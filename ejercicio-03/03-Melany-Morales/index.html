@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arreglo de Sabores</title>
+</head>
+<body>
+    <h1>Sabores de Helado</h1>
+    <script>
+        const sabores = ['pitaya', 'pistache', 'chicle'];
+        function contarSabores() {
+            const cantidad = sabores.length;
+            console.log('Cantidad de sabores:', cantidad);
+        }
+        function mostrarSabores() {
+            console.log('Sabores:', sabores);
+        }
+        function agregarSabor(nuevoSabor) {
+            sabores.push(nuevoSabor);
+            console.log(`Sabor ${nuevoSabor} agregado`);
+        }
+        function saludar(nombre) {
+            console.log(`Hola ${nombre}, bienvenido a nuestra heladería`);
+        }
+        function main() {
+            const nombreUsuario = prompt("Por favor, ingresa tu nombre:");
+            saludar(nombreUsuario);
+            mostrarSabores();
+            agregarSabor('fresa'); 
+            contarSabores();
+            mostrarSabores();
+            agregarSabor('chocolate'); 
+            contarSabores();
+        }
+
+        main();
+    </script>
+</body>
+</html>
