@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercio 03</title>
+    <title>Ejericio 03</title>
 </head>
 <body>
     <script>
@@ -13,33 +13,27 @@
             "Fresa"
         ];
 
-        function contarSabores() {
+        function contarSabores(){
             console.log("Cantidad de sabores: " + sabores.length);
         }
-
-        function mostrarSabores() {
+        function mostrarSabores(){
             console.log("Sabores:", sabores);
         }
-
-        function agregarSabor(sabor) {
+        function agregarSabores(sabor){
             sabores.push(sabor);
-            console.log("Sabor " + sabor + " agregado");
+            console.log("Sabor " + sabor + " Agregado");
         }
-
-        function saludar(nombre) {
-            console.log("¡Hola " + nombre + ", bienvenido a Git!");
+        function saludar(nombre){
+            console.log("¡Hola " + nombre + "bienvenido a Git!");
         }
-
-        function main() {
-            let nombre = prompt("Introduce tu nombre:");
+        function main(){
+            let nombre = prompt("Introduce tu nombre:")
             saludar(nombre);
-
             mostrarSabores();
-            agregarSabor("Uva");
+            agregarSabores("Guayaba");
             contarSabores();
             mostrarSabores();
-
-            agregarSabor("Limón");
+            agregarSabores("Melon");
             contarSabores();
             mostrarSabores();
         }
